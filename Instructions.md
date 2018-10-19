@@ -28,4 +28,4 @@ This project demonstrates the simulation of ROS Turtlebot3 path tracking with PI
 * Next, run the rrt project using following command(terminal 1):
 ```roslaunch tb3_control control.launch```
 * Find the “Marker” and add a "Marker". Now Rviz should start to listen to the Marker messages
-published from the control node, and you should see a screen something similar to the attached video.
+published from the control node, and you should see a screen something similar to the attached [video](https://youtu.be/okqIgZJy67E).
