@@ -1,0 +1,15 @@
+<launch>
+
+    <node name="tb3_control_node" pkg="tb3_control" type="tb3_control_node" output="screen">
+        <!--param name="frame" value="$(arg frame)"/>
+        <param name="worldFrame" value="$(arg worldFrame)"/>
+        <rosparam command="load" file="$(find tb3_navigation)/config/utils.yaml"/-->
+
+        <remap from="tb3_control_node/cmd_vel" to="cmd_vel"/>
+        <remap from="tb3_control_node/odom" to="odom"/>
+        <remap from="tb3_control_node/visualization_marker" to="visualization_marker"/>
+
+    </node>
+
+
+</launch>
