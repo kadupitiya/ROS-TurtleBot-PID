@@ -156,6 +156,9 @@ int main(int argc, char **argv) {
     double speedError = 0.0;
 
     int frame_count = 0;
+    PID pidTheta = PID(dt, maxT, minT, Kp, Kd, Ki);
+    PID pidVelocity = PID(dtS, maxS, minS, KpS, KdS, KiS);
+    
     while (ros::ok()) {
         if (frame_count == 0)
             displayLane(false, geometry);
@@ -177,11 +180,6 @@ after you computed your control input (here angular speed) w, pass w value to "t
 
 
         double tb3_lenth = 0.125;
-
-
-        PID pidTheta = PID(dt, maxT, minT, Kp, Kd, Ki);
-
-        PID pidVelocity = PID(dtS, maxS, minS, KpS, KdS, KiS);
 
         /*Error calculation*/
         VECTOR2D current_pos, pos_error;
