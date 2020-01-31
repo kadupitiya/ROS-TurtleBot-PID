@@ -5,7 +5,7 @@ Here is the youtube [video](https://youtu.be/okqIgZJy67E).
 ## Instructions to run the project
 * First, open a terminal(Lets call terminal 1) and navigate the project.
 * Next, go to the root directory(terminal 1):
- ```cd ~/catkin_ws/src/ # (you need to create the dir first if none exists, see ROS tutorial)```
+ ```cd ~/catkin_ws/src/ # (you need to create the dir first if none exists, see ROS tutorial http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment)```
 * Then, clone following git projects(terminal 1):
 ```git clone ​ https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git```
 ```git clone ​ https://github.com/ROBOTIS-GIT/turtlebot3.git```
